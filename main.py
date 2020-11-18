@@ -14,16 +14,29 @@ def asas():
     # print(df.loc['Link', 8])
     # # df1 = df[(df['Status'] == 'ToDo') & (df['Type'] == 'User Story') & (df['Link'].astype(bool) != '[]')]
 
+    # поработать с этим!
+    df['tasks1.csv'] = df[строка].apply(literal_eval)
+
 
 #     print(df[df["Link"] == "[]"])
 #    return df[df("Status") == "ToDo" and df("Type") == "User Story"]
 #    return type(df.loc[8, df['Link']])
 #    return df.loc[8, ['Link']]
 
+# ____________________________________________________
+# df = pd.read_csv('tasks1.csv', usecols=['Key', 'Link'])
+# for i in df['Link']:
+#     # df.values.tolist()
+#     print(i)
+# products_list = df.values.tolist()
+# print(products_list)
+# ____________________________________________________
 
 # rz.issues_construct()
-# asas()
-rz.issues_csv_parse()
+asas()
+# rz.issues_csv_parse()
+
+# print(rz.issues_csv_parse())
 
 # print(all_issues)
 # print(jira2.fields())

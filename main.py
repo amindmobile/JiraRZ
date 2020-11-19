@@ -34,6 +34,3 @@ rz.issues_csv_parse()
 # return df[(df['Status'] == 'ToDo') & df[c].isin([d, e, f])]
 # df1.loc['a', 'A']
 
-# Issues count
-# sas = Rz()
-# print(sas.issues_count(all_issues))

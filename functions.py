@@ -9,6 +9,7 @@
 # ToDo: Если все линки в User Story в статусе "Готово" - создать уведомление
 # ToDo: Создать механизм отправки почтовых уведомлений
 # ToDo: Выложить готовое на Гит и Syno
+
 import numpy as np
 import pandas as pd
 from settings import all_issues, jira_atl, project, jira2
@@ -34,6 +35,9 @@ class Rz:
         df = pd.DataFrame(np.array(self.issues_constructed_all))
         df.columns = ['Key', 'Status', 'Type', 'Summary', 'Link']
         df.to_csv('tasks.csv', index=False)
+
+
+
 
 # Конструирует ссылки на таски (ссылка + ID)
     def issues_csv_parse(self):
